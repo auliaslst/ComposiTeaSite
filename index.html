@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComposiTea - Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <img src="assets/logo.png" alt="ComposiTea Logo" class="logo">
+    <h1>ComposiTea</h1>
+
+    <!-- Login Form -->
+    <form id="loginForm">
+      <input type="text" id="loginUsername" placeholder="Username" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button type="submit">Masuk</button>
+      <p class="link">Belum punya akun? <a href="#" onclick="showRegister()">Daftar</a></p>
+      <p class="link"><a href="#" onclick="showForgot()">Lupa Password?</a></p>
+    </form>
+
+    <!-- Register Form -->
+    <form id="registerForm" class="hidden">
+      <input type="text" id="regUsername" placeholder="Username" required>
+      <input type="text" id="regAddress" placeholder="Alamat Domisili/Kantor" required>
+      <input type="tel" id="regPhone" placeholder="Nomor Telepon Aktif" required>
+      <input type="password" id="regPassword" placeholder="Password" required>
+      <input type="password" id="regPassword2" placeholder="Ulangi Password" required>
+      <button type="submit">Daftar</button>
+      <p class="link">Sudah punya akun? <a href="#" onclick="showLogin()">Masuk</a></p>
+    </form>
+
+    <!-- Forgot Password Form -->
+    <form id="forgotForm" class="hidden">
+      <input type="text" id="forgotUsername" placeholder="Username" required>
+      <input type="tel" id="forgotPhone" placeholder="Nomor Telepon Aktif" required>
+      <button type="submit">Reset Password</button>
+      <p class="link"><a href="#" onclick="showLogin()">Kembali ke Login</a></p>
+    </form>
+  </div>
+</body>
+</html>
